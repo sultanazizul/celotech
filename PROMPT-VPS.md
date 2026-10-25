@@ -4,7 +4,7 @@ Repo: https://github.com/sultanazizul/celotech.git
 
 Langkah:
 1. Clone: `git clone https://github.com/sultanazizul/celotech.git ~/celotech`. Kalau sudah pernah di-clone: `cd ~/celotech && git pull`.
-   Repo-nya private. Kalau VPS belum punya akses GitHub, login dulu (`gh auth login`) atau pasang deploy key read-only untuk repo ini. Kalau butuh aku, tanya.
+   Kalau repo-nya private dan VPS belum punya akses GitHub, login dulu (`gh auth login`) atau pasang deploy key read-only untuk repo ini. Kalau butuh aku, tanya.
 2. Cari konfigurasi web server yang sekarang melayani celotech.sazporto.com, misalnya `sudo grep -Rl "celotech.sazporto.com" /etc/nginx/`. Catat folder root-nya, baris listen/ssl/sertifikat, dan redirect yang sudah ada.
 3. Backup sebelum ganti apa pun:
    - folder root halaman yang sekarang → salin ke /var/www/celotech-placeholder-backup-<tanggal>
